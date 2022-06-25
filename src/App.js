@@ -8,13 +8,17 @@ function App() {
   const [posts, setPosts] = useState([{name: 'Kendall', post: 'Hello'}])
 
   function addNewPost(post){
-    let tempPosts = [post, ...posts]
+    
+    let tempPosts = [...posts, post];
+
+    setPosts(tempPosts);
   }
 
   return (
     <div>
-      <CreatePost />
+      <CreatePost addNewPostProperty={addNewPost} />
       <DisplayPosts parentPosts={posts} />
+
     </div>
   );
 }

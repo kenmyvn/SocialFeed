@@ -8,11 +8,12 @@ const CreatePost = (props) => {
 
     function handleSubmit(event) {
         event.preventDefault();
-        let newEntry = {
+        let newPost = {
             name: name,
             post: post
         };
-        console.log(newEntry);
+        console.log(newPost);
+        props.addNewPostProperty(newPost)
     }
 
     return ( 
