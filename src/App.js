@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import CreatePost from './Components/CreatePost/CreatePost';
 
 
 function App() {
@@ -7,7 +8,7 @@ function App() {
 
   return (
     <div>
-      <h3>Hello World</h3>
+      <CreatePost />
     </div>
   );
 }
