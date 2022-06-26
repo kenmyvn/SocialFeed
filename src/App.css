@@ -3,8 +3,10 @@
     border-style: solid;
     border-color: black;
     background-color: white;
-    margin: 1em;
     padding: 1em;
+    width: 80%;
+    max-width: 800px;
+    margin: 1em auto;
 }
 
 
@@ -13,9 +15,11 @@
     border-style: solid;
     border-color: black;
     background-color: white;
-    margin: 1em;
     padding: 1em;
+    margin: 1em auto;
     height: 65vh;
+    width: 80%;
+    max-width: 800px;
 }
 
 

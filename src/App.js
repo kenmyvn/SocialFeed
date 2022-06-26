@@ -20,11 +20,9 @@ function App() {
       <div className='row'>
         <h4 style={{margin: '1em'}}><NavBar /></h4>
         <div className='background-color'>
-        <div className='col-md-6'>
           <div className='border-box'>
             <CreatePost addNewPostProperty={addNewPost} />
           </div>
-        </div>
         <div className='border-box-2'>
           <DisplayPosts parentPosts={posts} />
         </div>
