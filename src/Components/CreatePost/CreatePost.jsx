@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-// import * as React from 'react';
-// import Button from '@mui/material/Button';
 
 
 const CreatePost = (props) => {
@@ -8,9 +6,6 @@ const CreatePost = (props) => {
     const [name, setName] = useState('');
     const [post, setPost] = useState('');
 
-    // function Button() {
-    //     return <Button variant="contained">Create</Button>
-    // }
 
     function handleSubmit(event) {
         event.preventDefault();
@@ -33,7 +28,6 @@ const CreatePost = (props) => {
                 <input type='post' class='form-control' value={post} onChange={(event) => setPost(event.target.value)} />
             </div>
             <button type='submit'>Create</button>
-            {/* <div>Button()</div>> */}
         </form>
      );
 }

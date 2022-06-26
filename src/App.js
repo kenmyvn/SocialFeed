@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import DisplayPosts from './Components/DisplayPosts/DisplayPosts';
 import CreatePost from './Components/CreatePost/CreatePost';
 import './App.css'
+import NavBar from './Components/NavBar/NavBar';
 
 function App() {
 
@@ -17,13 +18,16 @@ function App() {
   return (
     <div className='container-fluid'>
       <div className='row'>
+        <h4 style={{margin: '1em'}}><NavBar /></h4>
+        <div className='background-color'>
         <div className='col-md-6'>
           <div className='border-box'>
             <CreatePost addNewPostProperty={addNewPost} />
           </div>
         </div>
-        <div className='border-box'>
+        <div className='border-box-2'>
           <DisplayPosts parentPosts={posts} />
+        </div>
         </div>
       </div>
     </div>

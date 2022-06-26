@@ -2,6 +2,23 @@
     border: 1px;
     border-style: solid;
     border-color: black;
+    background-color: white;
     margin: 1em;
     padding: 1em;
+}
+
+
+.border-box-2 {
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    background-color: white;
+    margin: 1em;
+    padding: 1em;
+    height: 65vh;
+}
+
+
+.background-color {
+    background-color: #c5ddd1;
 }
