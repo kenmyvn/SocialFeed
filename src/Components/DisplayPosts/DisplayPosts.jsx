@@ -1,15 +1,14 @@
-
+import Post from "../Post/Post";
 
 const DisplayPosts = (props) => {
+
+
     return ( 
         <table>
             <tbody>
             {props.parentPosts.map((post) => {
                 return (
-                    <tr>
-                        <td>{post.name}</td>
-                        <td>{post.post}</td>
-                    </tr>
+                    <Post name={post.name} body={post.post}/>
                 );
             })}
             </tbody>

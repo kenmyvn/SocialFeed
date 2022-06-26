@@ -1,0 +1,9 @@
+.post {
+    margin: 2em;
+    border-bottom: 1px solid black;
+    
+}
+
+.name {
+    font-weight: bold;
+}
