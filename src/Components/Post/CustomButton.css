@@ -1,12 +1,15 @@
 
 .button {
     align-self: right;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
 }
 
-.active{
+.activelike{
     background-color: green;
 }
 
-/* .inactive{
-
-} */
+.activedislike{
+    background-color: red;
+}

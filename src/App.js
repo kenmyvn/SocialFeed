@@ -6,7 +6,7 @@ import NavBar from './Components/NavBar/NavBar';
 
 function App() {
 
-  const [posts, setPosts] = useState([{name: 'Kendall', post: 'Hello'}])
+  const [posts, setPosts] = useState([{name: 'Kendall Morgan', post: 'Hello, this is my first post on Social Feed. I appreciate you coming to this page. One like equals one dollar.'}])
 
   function addNewPost(post){
     

@@ -24,7 +24,7 @@ const CreatePost = (props) => {
             </div>
             <div className='form-group'>
                 <label>Post</label>
-                <input type='post' textarea class='form-control' rows="3" value={post} onChange={(event) => setPost(event.target.value)} />
+                <input type='post' class='form-control' rows="3" value={post} onChange={(event) => setPost(event.target.value)} />
             </div>
             <button type='submit' class='btn btn-primary' style={{'margin-top': '1em', 'align-self': 'right'}}>Create</button>
         </form>
