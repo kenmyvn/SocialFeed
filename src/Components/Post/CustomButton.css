@@ -1,8 +1,6 @@
 
 .button {
-    background-image: url(./buttonimg.png);
-    height: 70px;
-    align-self: auto;
+    align-self: right;
 }
 
 .active{
