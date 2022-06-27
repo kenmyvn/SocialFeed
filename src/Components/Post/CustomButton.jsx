@@ -10,7 +10,12 @@ const CustomButton = (props) => {
 
     function handleClick(){
         if(buttonClass ==="inactive"){
-            setButtonClass("activelike");
+            if (props.type === 'up') {
+                setButtonClass("activelike");
+            }
+            else if (props.type === 'down') {
+                setButtonClass("activedislike");
+            }
         }
         else {
             setButtonClass("inactive");
@@ -18,11 +23,11 @@ const CustomButton = (props) => {
     }
 
     return ( 
-        <div>
+        <div className='button'>
             <button className={buttonClass} onClick={handleClick}>{props.message}
-            {props.type == 'up'
-            ? <FontAwesomeIcon icon={faThumbsUp} />
-            : <FontAwesomeIcon icon={faThumbsDown} />
+            {props.type === 'up'
+            ? <FontAwesomeIcon icon={faThumbsUp} size='lg'/>
+            : <FontAwesomeIcon icon={faThumbsDown} size='lg'/>
             }
             </button>
         </div>

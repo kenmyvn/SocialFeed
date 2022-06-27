@@ -9,7 +9,7 @@ const Post = (props) => {
       </div>
       <div className="body">
         <p>{props.body}</p>
-        <div className="button">
+        <div className="buttons">
           <CustomButton type="up"/>
           <CustomButton type="down"/>
         </div>

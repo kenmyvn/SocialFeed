@@ -8,6 +8,13 @@
     font-weight: bold;
 }
 
+.buttons {
+    align-self: right;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+}
+
 
 /* .button {
 
